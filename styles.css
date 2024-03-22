@@ -1,0 +1,400 @@
+html,body
+		{
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+			padding: 0px;
+			overflow-x: hidden;
+            background: black;
+		}
+
+		.logo {
+		  position: absolute;
+		  top: 50;
+		  left:70%;
+		  right: 0%;
+		  width: 130px;
+		  height: 60px;
+		}
+		
+		#map {
+			position: absolute;
+			object-fit:cover;
+			top: 10%;
+			left: 5%;
+			right: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 255, 255, 0);
+		}
+
+        #text {
+            position: absolute;
+            top: 40%;
+            right: 10px;
+            left: 80%;
+			width: 100%;
+            transform: translate(-50%, -50%);
+            font-size: clamp(30px, 3vw, 30px);
+            color: rgb(255, 46, 133);
+			
+
+            }
+
+
+		.marker {
+			position: absolute;
+			width: 100%;
+			max-height: 100px;
+			border-radius: 50%;
+			background-color: rgba(255, 26, 26, 0.856);
+			fill: rgb(84, 114, 248);
+			stroke: rgb(255, 255, 255);
+			cursor: pointer;
+            animation: marker 2s ease-in-out 0s infinite normal forwards;
+            /* animation: marker 2s ease-in-out 0s infinite normal forwards; */
+
+
+        }
+
+        #mascot img {
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            transform: translateX(-50%, -50%);
+            width: 100px;
+            height: 200px;
+            z-index: 10;
+    }
+
+        @keyframes marker {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+        /* @keyframes marker {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.99);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+} */  
+
+		#mumbai {
+			top: 200px;
+			left: 300px;
+		}
+		#pune {
+			top: 250px;
+			left: 350px;
+		}
+		#noida {
+			top: 150px;
+			left: 450px;
+		}
+		#kolkata {
+			top: 100px;
+			left: 200px;
+		}
+		#banglore {
+			top: 300px;
+			left: 200px;
+		}
+		#hyderabad {
+			top: 350px;
+			left: 400px;
+		}
+		#chennai {
+			top: 400px;
+			left: 300px;
+		}
+		.state {
+			fill: #F8F3F3;
+			stroke: black;
+			stroke-width: 1px;
+			cursor: pointer;
+		}
+		#maharashtra {
+			fill: o#F8F3F3;
+			stroke: black;
+			stroke-width: 1px;
+		}
+		#delhi {
+			fill: #F8F3F3;
+			stroke: black;
+			stroke-width: 1px;
+		}
+		#west-bengal {
+			fill: #F8F3F3;
+			stroke: black;
+			stroke-width: 1px;
+		}
+		#karnataka {
+			fill: #F8F3F3;
+			stroke: black;
+			stroke-width: 1px;
+		}
+		#telangana {
+			fill: #F8F3F3;
+			stroke: black;
+			stroke-width: 1px;
+		}
+		#tamil-nadu {
+			fill: #F8F3F3;
+			stroke: black;
+			stroke-width: 1px;
+		}
+		
+	/*- Mobile | Media query for smaller screens */
+	@media screen and (max-width: 768px) {
+		
+		html,body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			
+		}
+		
+		.logo {
+		  width: 70px;
+		  height: 30px;
+		}
+		
+		#map {
+			position: relative;
+			object-fit:cover;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			width: 100%;
+			height: 500px;
+		}
+
+		.marker {
+			max-height: 50px;
+		}
+
+
+        #text {
+            margin-top: 800px;
+            left: 40%;
+        }
+
+		h4 {
+			font-size: 0.9em;
+		}
+
+		b {
+			font-size: 13px;
+		}
+
+		p {
+			font-size: 0.6em;
+		}
+
+        #addtext {
+            font-size: 12px;
+        }
+        #mascot img {
+            top: 250px;
+            left: 75%;
+            transform: translateX(-50%, -50%);
+            width: 80px;
+            height: 150px;
+        }
+
+	}
+
+			@media (min-width: 768px) and (max-width: 1199px) {
+		/* Medium screen styles */
+		
+		html,body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow-y: hidden;
+		}
+		
+		
+		.logo {
+			transform: translateX(-50%);
+			width: 100px;
+			height: 50px;
+			left: 70%;
+		}
+
+		#map {
+			top: 5%;		
+			
+			width: 600px;
+			height: 600px;
+		}
+
+		.marker {
+			width: 7px;
+			height: 7px;
+		}
+
+        #text {
+            top: 140;
+            right: 50%;
+			font-size: 3;
+        }
+
+        #mascot img {
+            top: 200px;
+			right: 5%;
+            left: 55%;
+            transform: translateX(-50%);
+            width: 140px;
+            height: 280px;
+        }
+
+	}
+
+	/* larger screens */
+	@media (min-width: 768px) and (max-width: 1199px) {
+		
+		html,body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow-y: hidden;
+		}
+		
+		
+		.logo {
+			transform: translateX(-50%);
+			width: 100px;
+			height: 50px;
+			left: 70%;
+		}
+
+		#map {
+			top: 5%;		
+			
+			width: 600px;
+			height: 600px;
+		}
+
+		.marker {
+			width: 7px;
+			height: 7px;
+		}
+
+        #text {
+            top: 50;
+            left: 85%;
+			font-size: 3;
+        }
+        #mascot img {
+            top: 250px;
+            left: 56.5%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 220px;
+        }
+
+	}
+    @media (min-width: 1200px) and (max-width: 1600px) {
+		/* max screen styles */
+		
+		html,body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow-y: hidden;
+		}
+		
+		
+		.logo {
+		  width: 150px;
+		  height: 70px;
+		}
+		
+		#map {
+			top: 5%;
+			
+			width: 600px;
+			height: 600px;
+		}
+
+		.marker {
+			max-height: 150px;
+		}
+
+		
+        #text {
+            left: 85%;
+			font-size: 4;
+        }
+        #mascot img {
+            top: 250px;
+            left: 57%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 220px;
+        }
+	}
+	@media (min-width: 1600px) and (max-width: 2000px) {
+		/* max screen styles */
+		
+		html,body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow-y: hidden;
+		}
+		
+		
+		.logo {
+		  width: 150px;
+		  height: 70px;
+		}
+		
+		#map {
+			top: 5%;
+			
+			width: 700px;
+			height: 700px;
+		}
+
+		.marker {
+			max-height: 150px;
+		}
+
+		
+        #text {
+			top: 40%;
+            left: 85%;
+			font-size: 4;
+        }
+        #mascot img {
+            top: 250px;
+            left: 57%;
+            transform: translateX(-50%);
+            width: 140px;
+            height: 260px;
+        }
+	}
