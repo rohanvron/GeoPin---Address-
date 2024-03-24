@@ -13,3 +13,5 @@ GeoPin is an interactive map application that allows users to explore a map of a
 - JavaScript
 
 Check Out the <a href="https://rohanvron.github.io/GeoPin---Address-Mapper/"> DEMO </a>
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
